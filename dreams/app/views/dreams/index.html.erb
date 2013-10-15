@@ -1,6 +1,11 @@
-<div class="spider-list">
-	
-<%@dream.each do 
-
-
+<div class="dream-list">
+<h1>Dreams List</h1>
+<%= link_to "New Dream", new_dream_path %>	
+<%@dreams.each do |dream| %>
+<h3><%=link_to dream.title , dream %></h3>
+	<div>Rating: <%= dream.rating%></div>
+	<div>Created at: <%= dream.created_at%></div>
+	<%= link_to "Destroy", dream, method: :delete, data: {confirm: "Forget dream forever?"} %>
+	<%= image_tag dream.image, height: '32', width: '32'%>
+<%end%>
 </div>

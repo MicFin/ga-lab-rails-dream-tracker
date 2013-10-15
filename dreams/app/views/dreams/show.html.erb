@@ -1,9 +1,9 @@
 
 <div class="dream">
-<div><%=@dream.title%></div>
-<div><%=@dream.body%></div>
-<div><%=@dream.rating %></div>
-<div><%=@dream.created_at %></div>
-<div><%=@dream.updated_at %></div>
+<div><h1><%=@dream.title%></h1></div>
+<div>The story: <%=@dream.body%></div>
+<div>Rating: <%=@dream.rating %></div>
+<div>Had dream on: <%=@dream.created_at %></div>
+<div>Remembered more on: <%=@dream.updated_at %></div>
 <%= image_tag @dream.image, height: '64', width: '64'%>
 </div>

@@ -1,0 +1,11 @@
+<%= form_for(@dream) do |f| %>
+	<div class="field"><%=f.label :title%><%=f.text_field :title %></div>
+	<div class="field"><%=f.label :body%><%=f.text_field :body %></div>
+	<div class="field"><%=f.label :rating%><%=f.text_field :rating %></div>
+
+	<div class="field"><%=f.label :image%><%=f.text_field :image %></div>
+
+	<div class ="actions">
+	<%=f.submit%>
+	</div>
+<%end%>
